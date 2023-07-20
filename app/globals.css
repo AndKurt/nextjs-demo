@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -253,4 +255,22 @@ Add the correct display in Chrome and Safari.
 
 summary {
     display: list-item;
+}
+
+@layer utilities {
+    .gradient-label {
+        background: linear-gradient(270deg, #f3d1c1 0%, rgba(255, 178, 141, 0) 100%);
+    }
+}
+
+.banner {
+    @apply bg-gradient-to-br from-[#FFF0E900] to-[#EAB196] h-[1034px];
+}
+
+.text-common {
+    @apply text-20 font-sourseSans3;
+}
+
+.play-btn {
+    @apply flex justify-center items-center rounded-full;
 }

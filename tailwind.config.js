@@ -25,8 +25,9 @@ module.exports = {
                 65: '4.0625rem',
                 278: '17.375rem',
             },
-            width: {
-                header: '81.8125rem', //1309px
+            maxWidth: {
+                container: '1399px',
+                navigation: '771px',
             },
             margin: {
                 60: '60px',
@@ -39,6 +40,12 @@ module.exports = {
                 'hover-grey': '#A4A4A4',
                 grey: '#757575',
                 'light-grey': '#8E8E8E',
+            },
+            fontFamily: {
+                sourseSans3: ['"Source Sans 3"'],
+            },
+            backgroundImage: {
+                video: "url('/img/home/video-img.png')",
             },
         },
     },

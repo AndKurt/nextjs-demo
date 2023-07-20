@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Kufam } from 'next/font/google';
+import { Header } from '@/components';
 
 // Setting for default font-family
 const kufam = Kufam({ subsets: ['latin'] });
@@ -13,7 +14,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
-            <body className={kufam.className}>{children}</body>
+            <body className={kufam.className}>
+                <Header />
+                {children}
+            </body>
         </html>
     );
 }
