@@ -45,7 +45,7 @@ module.exports = {
                 sourseSans3: ['"Source Sans 3"'],
             },
             backgroundImage: {
-                video: "url('./img/home/video-img.png')",
+                video: "url('/img/home/video-img.png')",
             },
         },
     },
